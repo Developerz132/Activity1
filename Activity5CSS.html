@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        .color {
+            height: 400px;
+            background-image: radial-gradient(  orange 12%, red 15%, pink 35%, violet 50%, purple 65%);
+        }
+
+        #animation {
+            margin-top: 200px;
+            margin-left: 600px;
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            animation-name: anime;
+            animation-duration: 10s;
+            animation-iteration-count:infinite ;
+            animation-direction: alternate;
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes anime {
+             0% {
+          background-color: pink;
+        }
+        10% {
+          background-color: rgb(255, 137, 156);
+        }
+        25% {
+          background-color: orange;
+        }
+        40% {
+          background-color: yellow;
+        }
+        55% {
+          background-color: lightgreen;
+        }
+        70% {
+          background-color: skyblue;
+        }
+        85% {
+          background-color: violet;
+        }
+        100% {
+          background-color: pink;
+        }
+        }
+      </style>
+  </head>
+  <body>
+        <div class="color">
+            Hello
+        </div>
+        <div id="animation">
+            Welcome
+        </div>
+  </body>
+</html>
